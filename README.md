@@ -23,10 +23,15 @@ It is anticipated the tool information profiles will be used by a tool descripti
 
 # Files
 
-File | Description
----- | -----------
-toolInfoProfileSchema | Tool Information Profile Schema (JSON Schema)
-sampleToolInfoProfile | Sample tool information profile (JSON file)
-
+File                           | Description
+----                           | -----------
+toolInfoProfileSchema_dev.json | Tool Information Profile Schema - dev version (JSON schema)
+docs                           | Schema docs for Tool Information Profile Schema - dev version
+examples                       | Examples Tool Information Profiles created using the schema
+profiles                       | Tool Information Profiles created thus far
+stable                         | Current stable version of the schema + docs 
+versions                       | Older stable versions of the schema + docs
+assets                         | Folder for images and other assets
+README.md		       | This file
 
 
