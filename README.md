@@ -15,9 +15,11 @@ The key words "MUST", "MUST NOT", "SHOULD", and "MAY", and "OPTIONAL" are to be 
 * "SHOULD" mean that there may exist valid reasons in particular circumstances to ignore a particular guideline, but the full implications must be understood and carefully weighed before doing so.
 * "MAY mean that the guideline is truly optional; you can choose to follow it or not.
 
-Tool information profiles **MUST** comply with the Tool Information Profile Schema (a JSON schema). This schema supports most of the biotoolsSchema attributes.  It does not make sense to include some of the attributes, and these are excluded. 
+Tool information profiles **MUST** comply with the Tool Information Profile Schema (a JSON schema), which supports *all* of the biotoolsSchema attributes.
 
-It is anticipated the tool information profiles will be used by a tool description verification service, which will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions would be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
+We anticipate the tool information profiles will be used by a tool description verification service which will provide a sustainable method for reporting on tool description quality within a corpus of tools
+
+It will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions will be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
 
 ![toolDescriptionVerifier](assets/toolDescriptionVerifier.png)
 
