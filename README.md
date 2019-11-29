@@ -26,7 +26,7 @@ It will take as input 1) a list of bio.tools tool IDs and 2) a tool information 
 
 # Documentation (for stable version 1.0.0)
 Comprehensive documentation is available: 
-* [Technical docs](http://bio-tools.github.io/toolInfoProfileSchema/) (built from files under [/stable/docs/](https://github.com/bio-tools/toolInfoProfileSchema/tree/master/stable/docs) )
+* [Technical docs](http://bio-tools.github.io/Tool-Information-Profiles/) (built from files under [/stable/docs/](https://github.com/bio-tools/toolInfoProfileSchema/tree/master/stable/docs) )
 
 # Files
 
