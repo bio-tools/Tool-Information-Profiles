@@ -26,7 +26,7 @@ It will take as input 1) a list of bio.tools tool IDs and 2) a tool information 
 
 # Documentation (for stable version 1.0.0)
 Comprehensive documentation is available: 
-* [Technical docs](http://bio-tools.github.io/Tool-Information-Profiles/) (built from files under [/stable/docs/](https://github.com/bio-tools/toolInfoProfileSchema/tree/master/stable/docs) )
+* [Technical docs](http://bio-tools.github.io/Tool-Information-Profiles/) (built from files under [/stable/docs](https://github.com/bio-tools/Tool-Information-Profiles/tree/master/stable/docs))
 
 # Files
 
@@ -34,9 +34,9 @@ File                           | Description
 ----                           | -----------
 toolInfoProfileSchema_dev.json | Tool Information Profile Schema - dev version (JSON schema)
 docs                           | Technical documentation - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (files copied from "stable" below)
-examples                       | Example Tool Information Profiles created using the schema (latest stable version)
 profiles                       | Tool Information Profiles created thus far
 stable                         | Current stable version of the schema + docs 
+stable/examples                | Example Tool Information Profiles created using the schema (latest stable version)
 versions                       | Older stable versions of the schema + docs
 assets                         | Folder for images and other assets
 README.md		       | This file
