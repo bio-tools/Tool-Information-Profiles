@@ -33,8 +33,8 @@ Comprehensive documentation is available:
 File                           | Description
 ----                           | -----------
 toolInfoProfileSchema_dev.json | Tool Information Profile Schema - dev version (JSON schema)
-docs                           | Technical documentation for the schema - latest stable version 
-examples                       | Examples Tool Information Profiles created using the schema
+docs                           | Technical documentation - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (files copied from "stable" below)
+examples                       | Example Tool Information Profiles created using the schema (latest stable version)
 profiles                       | Tool Information Profiles created thus far
 stable                         | Current stable version of the schema + docs 
 versions                       | Older stable versions of the schema + docs

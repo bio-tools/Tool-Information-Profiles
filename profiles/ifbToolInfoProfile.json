@@ -3,7 +3,8 @@
 		"name": "IFB tools information profile",
 		"description": "Information profile for tools included in the IFB tools portfolio",
 		"version": "0.1",
-		"comment": "This profile defines the information required for a tool to be included in the ELIXIR France tools portfolio."
+		"comment": "This profile defines the information required for a tool to be included in the ELIXIR France tools portfolio.",
+		"schemaVersion": "1.0.0"
 	},
 	"rules": [
 		{
