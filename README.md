@@ -46,7 +46,7 @@ File                            | Description
 toolInfoProfileSchema_dev.json  | Tool Information Profile Schema - dev version (JSON schema)
 stable                          | Current stable version of the schema + docs 
 stable/examples                 | Example Tool Information Profiles created using the schema (latest stable version)
-docs                            | Technical docs formatted for website - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (uses files copied from "stable" below)
+docs                            | Technical docs formatted for website (latest stable version).  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (uses files copied from "stable" folder)
 versions                        | Older stable versions of the schema + docs
 profiles                        | Tool Information Profiles created thus far
 toolAttributesSchema.json       | JSON schema for the tool attributes JSON file
