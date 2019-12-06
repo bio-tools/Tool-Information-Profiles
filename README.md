@@ -28,7 +28,7 @@ An information graphic derived from the [IFB Tool Information Profile](https://g
 # Application
 We anticipate the tool information profiles will be used by a tool description verification service which will provide a sustainable method for reporting on tool description quality within a corpus of tools.
 
-It will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions will be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
+It will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions will be consumed in JSON or JSON-LD format, *e.g.* by invoking the [bio.tools](https://bio.tools) API, or from a *bio.tools* data dump.
 
 <p align="center">
 <img src="assets/toolDescriptionVerifier.png" />
