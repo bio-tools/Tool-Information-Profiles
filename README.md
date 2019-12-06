@@ -44,11 +44,11 @@ Comprehensive documentation is available:
 File                            | Description
 ----                            | -----------
 toolInfoProfileSchema_dev.json  | Tool Information Profile Schema - dev version (JSON schema)
-docs                            | Technical documentation - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (files copied from "stable" below)
-profiles                        | Tool Information Profiles created thus far
 stable                          | Current stable version of the schema + docs 
 stable/examples                 | Example Tool Information Profiles created using the schema (latest stable version)
+docs                            | Technical docs formatted for website - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (uses files copied from "stable" below)
 versions                        | Older stable versions of the schema + docs
+profiles                        | Tool Information Profiles created thus far
 toolAttributesSchema.json       | JSON schema for the tool attributes JSON file
 tool_attributes.json	        | Lits of attributes defined in biotoolsSchema in JSON format
 tool_attributes_WITH_REGEX.json | Version of tool_attributes.json with regex patterns (ignore for now)
