@@ -1,6 +1,6 @@
 # Tool Information Profiles
 
-A *tool information profile* is a JSON document which specifies which tool attributes - defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) - should be specified for different types of tools within a set of tool descriptions.
+A *tool information profile* is a JSON document which specifies which tool attributes - defined in [biotoolsSchema](https://github.com/bio-tools/biotoolsSchema) and also listed in the file [tool_attributes.json](https://github.com/bio-tools/Tool-Information-Profiles/blob/master/tool_attributes.json) - should be specified for different types of tools within a set of tool descriptions.
 
 Within a profile, biotoolsSchema [attributes](https://biotoolsschema.readthedocs.io/en/latest/biotoolsschema_elements.html#) may be specified for different [tool types](https://biotoolsschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type) as:  
 * **Mandatory** - the attribute **MUST** be defined
@@ -30,15 +30,22 @@ Comprehensive documentation is available:
 
 # Files
 
-File                           | Description
-----                           | -----------
-toolInfoProfileSchema_dev.json | Tool Information Profile Schema - dev version (JSON schema)
-docs                           | Technical documentation - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (files copied from "stable" below)
-profiles                       | Tool Information Profiles created thus far
-stable                         | Current stable version of the schema + docs 
-stable/examples                | Example Tool Information Profiles created using the schema (latest stable version)
-versions                       | Older stable versions of the schema + docs
-assets                         | Folder for images and other assets
-README.md		       | This file
+File                            | Description
+----                            | -----------
+toolInfoProfileSchema_dev.json  | Tool Information Profile Schema - dev version (JSON schema)
+docs                            | Technical documentation - latest stable version.  Hosted [here](http://bio-tools.github.io/Tool-Information-Profiles/) (files copied from "stable" below)
+profiles                        | Tool Information Profiles created thus far
+stable                          | Current stable version of the schema + docs 
+stable/examples                 | Example Tool Information Profiles created using the schema (latest stable version)
+versions                        | Older stable versions of the schema + docs
+toolAttributesSchema.json       | JSON schema for the tool attributes JSON file
+tool_attributes.json	        | Lits of attributes defined in biotoolsSchema in JSON format
+tool_attributes_WITH_REGEX.json | Version of tool_attributes.json with regex patterns (ignore for now)
+assets                          | Folder for images and other assets
+README.md		        | This file
+
+
+
+
 
 
