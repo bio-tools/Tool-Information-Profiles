@@ -18,15 +18,22 @@ The key words "MUST", "MUST NOT", "SHOULD", and "MAY", and "OPTIONAL" are to be 
 Tool information profiles **MUST** comply with the Tool Information Profile Schema (a JSON schema), which supports *all* of the biotoolsSchema attributes.
 
 # Example
-An information graphic derived from the [IFB Tool Information Profile](https://github.com/bio-tools/Tool-Information-Profiles/blob/master/profiles/ifbToolInfoProfile.json) is shown below
-![toolDescriptionVerifier](assets/ifb_info_standard.png)
+An information graphic derived from the [IFB Tool Information Profile](https://github.com/bio-tools/Tool-Information-Profiles/blob/master/profiles/ifbToolInfoProfile.json) is shown below:
+<p align="center">
+<img src="assets/ifb_info_standard.png" />
+</p>
+
+
 
 # Application
 We anticipate the tool information profiles will be used by a tool description verification service which will provide a sustainable method for reporting on tool description quality within a corpus of tools.
 
 It will take as input 1) a list of bio.tools tool IDs and 2) a tool information profile, and produce as output a report on the compliance of the tool descriptions to the standard, in human and machine-readable formats. Tool descriptions will be consumed in JSON format, *e.g.* by invoking the [bio.tools](https://bio.tools) API.
 
-![toolDescriptionVerifier](assets/toolDescriptionVerifier.png)
+<p align="center">
+<img src="assets/assets/toolDescriptionVerifier.png" />
+</p>
+
 
 # Documentation (for stable version 1.0.0)
 Comprehensive documentation is available: 
