@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+{% include 'nav.html' %}
+{% endblock %}
+
+{% block body %}
+
+<h1 class="title">Tool information profile</h1>
+<p> ... </p>
+
+<section class="section">
+    <h1 class="title">IFB Interoperability WG Demos</h1>
+
+    <form action="/quality_check" method="post" >
+      <div class="field has-addons">
+        <div class="control">
+    <!--        <input id="search" name="biotoolsID" class="input" type="text" value="raiss" placeholder="Find a tool">-->
+            <input id="search" name="biotoolsID" class="input" value="{{id}}" type="text" placeholder="Tool identifier">
+        </div>
+          <div class="control">
+            <input type="submit" name="check action" value="Check" class="button is-info">
+          </div>
+          <div class="control">
+            <input type="submit" name="random action" value="Pick random" class="button is-link">
+          </div>
+      </div>
+    </form>
+</section>
+
+{% if validation_results|length > 0 %}
+<section class="section">
+<h2 class="subtitle">Profile-based validation report</h2>
+<table class="table is-striped">
+      <thead>
+      <td>Tool</td><td>Description field</td>
+      </thead>
+      <tbody>
+         {% for p in validation_results.path %}
+             <tr>
+                 <td><a target="_blank" href="https://bio.tools/{{ validation_results.tool_id }}">{{ validation_results.tool_id }}</a>
+                 </td>
+                 <td>
+                     <span class="tag is-danger">{{ p }}</span>
+                 </td>
+             </tr>
+         {% endfor %}
+      </tbody>
+</table>
+</section>
+{% endif %}
+<!--<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>-->
+<!--<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
+<!--<script>-->
+<!--  $('#search').autocomplete({source : "/static/data/data.json", minLength : 2, delay:500});-->
+<!--</script>-->
+
+{% endblock %}

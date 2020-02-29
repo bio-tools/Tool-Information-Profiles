@@ -4,6 +4,7 @@ import json
 import os
 from rdflib import ConjunctiveGraph
 from jinja2 import Template
+from json import JSONDecodeError
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -410,12 +411,15 @@ def crawl_biotools(collection="", limit=-1, dump=False):
             for tool in entry['list']:
                 jsonld = rdfize(tool)
                 graph.parse(data=jsonld, format='json-ld')
-                
+
                 if dump:
                     temp_graph = ConjunctiveGraph()
                     temp_graph.parse(data=jsonld, format='json-ld')
                     os.makedirs('./bio.tools.dataset/'+tool['biotoolsID'], exist_ok=True)
-                    temp_graph.serialize(format="json-ld", auto_compact=True, destination=str('./bio.tools.dataset/'+tool['biotoolsID']+'/'+tool['biotoolsID']+'.jsonld'))
+                    temp_graph.serialize(format="json-ld", auto_compact=True, destination=str('./bio.tools.dataset/'+tool['biotoolsID']+'/'+tool['biotoolsID']+'.bioschemas.jsonld'))
+
+                    # with open('./bio.tools.dataset/'+tool['biotoolsID']+'/'+tool['biotoolsID']+'.json', 'w') as outfile:
+                    #     json.dump(entry['list'], outfile, indent=True, sort_keys=True)
                     
                 nb_tools += 1
                 progress = nb_tools * 100 / count
@@ -429,3 +433,6 @@ def crawl_biotools(collection="", limit=-1, dump=False):
         print(e)
     
     return graph
+
+if __name__ == '__main__':
+    crawl_biotools(limit=100, dump=True)

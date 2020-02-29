@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+{% include 'nav.html' %}
+{% endblock %}
+
+{% block body %}
+
+<h1 class="title">Tool information profile</h1>
+<p> ... </p>
+
+{% for t in data %}
+<section class="section">
+    <h2 class="subtitle">{{ t }}</h2>
+<!--    <span class="tag is-light">{{ count_no_pub }}</span></h2>-->
+
+        <table class="table is-striped">
+            <thead><td>Requirement</td><td>Description field</td></thead>
+        <tbody>
+
+        {% if 'Mandatory' in data[t].keys() %}
+        <tr>
+            <td><span class="has-text-danger">Mandatory</span></td>
+            <td>{% for at in data[t]['Mandatory'] %} <span class="tag is-danger">  {{ at }} </span>{% endfor %}</td>
+        </tr>
+        {% endif %}
+
+        {% if 'Recomended' in data[t].keys() %}
+        <tr>
+            <td><span class="has-text-warning">Recomended</span></td>
+            <td>{% for at in data[t]['Recomended'] %} <span class="tag is-warning">  {{ at }} </span>{% endfor %}</td>
+        </tr>
+        {% endif %}
+
+        {% if 'Optional' in data[t].keys() %}
+        <tr>
+            <td><span class="has-text-link">Optional</span></td>
+            <td>{% for at in data[t]['Optional'] %} <span class="tag is-link">  {{ at }} </span>{% endfor %}</td>
+        </tr>
+        {% endif %}
+
+        {% if 'Not applicable' in data[t].keys() %}
+        <tr>
+            <td><span class="has-text-primary">Not applicable</span></td>
+            <td>{% for at in data[t]['Not applicable'] %} <span class="tag is-primary">  {{ at }} </span>{% endfor %}</td>
+        </tr>
+        {% endif %}
+
+        </tbody>
+    </table>
+</section>
+
+{% endfor %}
+
+{% endblock %}
