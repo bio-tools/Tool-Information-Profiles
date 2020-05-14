@@ -1,0 +1,11 @@
+name:   biotools-rdf
+
+channels:
+        - bioconda
+        - conda-forge
+
+dependencies:
+        - urllib3
+        - rdflib-jsonld
+        - jupyter
+	- pyshacl
