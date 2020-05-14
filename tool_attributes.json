@@ -5,7 +5,7 @@
 		"id": "name",
 		"description": "Canonical software name assigned by the software developer or service provider.",
 	    "type": "Text",
-		"btschema": "<summary><name>",
+		"btschema": "<name>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link1D",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#name-tool"
 	},
@@ -14,7 +14,7 @@
 		"id": "description",
 		"description": "Short and concise textual description of the software function.",
 		"type": "Text",
-		"btschema": "<summary><description>",
+		"btschema": "<description>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link1E",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#description"
 	},
@@ -23,7 +23,7 @@
 		"id": "homepage",
 		"description": "Homepage of the software, or some URL that best serves this purpose.",
 	    "type": "URL",
-		"btschema": "<summary><homepage>",
+		"btschema": "<homepage>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link1F",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#homepage"
 	},
@@ -32,7 +32,7 @@
 		"id": "biotoolsID",
 		"description": "Unique ID (case insensitive) of the tool that is assigned upon registration of the software in bio.tools, normally identical to tool name.",
 	    "type": "biotoolsID",
-		"btschema": "<summary><biotoolsID>",
+		"btschema": "<biotoolsID>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link20",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#summary-biotoolsid"
 	},
@@ -41,7 +41,7 @@
 		"id": "biotoolsCURIE",
 		"description": "bio.tools CURIE (compact URI) based on the bio.tools tool ID.",
 		"type": "Text",
-	    "btschema": "<summary><biotoolsCURIE>",
+	    "btschema": "<biotoolsCURIE>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link21",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#summary-biotoolscurie"
 	},
@@ -50,7 +50,7 @@
 		"id": "version",
 		"description": "Version information (typically a version number) of the software.",
 	    "type": "Text",
-		"btschema": "<summary><version>",
+		"btschema": "<version>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link22",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#version-tool"
 	},
@@ -59,7 +59,7 @@
 		"id": "otherID",
 		"description": "A unique identifier of the software, typically assigned by an ID-assignment authority other than bio.tools.",
 	    "type": "Text",
-	 		"btschema": "<summary><otherID>",
+	 		"btschema": "<otherID>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link23",
 		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#other-ids"
 	},
@@ -69,7 +69,7 @@
 		"description": "The type of application software: a discrete software entity can have more than one type.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#tool-type",
-		"btschema": "<summary><toolType>",
+		"btschema": "<toolType>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link39",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#tool-type"
 	},
@@ -79,7 +79,7 @@
 		"description": "General scientific domain the software serves or other general category, *e.g.* 'Proteomics'.",
 	    "type": "EDAM Topic URI",
 	    "typelink": "http://edamontology.org/topic_0004",
-		"btschema": "<summary><topic>",
+		"btschema": "<topic>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3A",
 		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#topic"
 	},
@@ -157,7 +157,7 @@
 		"description": "The operating system supported by a downloadable software package.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#operating-system",
-		"btschema": "<labels><operatingSystem>",
+		"btschema": "<operatingSystem>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3B",
 		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#operating-system"
 	},
@@ -167,7 +167,7 @@
 		"description": "Name of programming language the software source code was written in, *e.g.* 'C'.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#programming-language",
-		"btschema": "<labels><language>",
+		"btschema": "<language>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3C",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#programming-language"
 	},
@@ -177,7 +177,7 @@
 		"description": "Software or data usage license.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#license",
-		"btschema": "<labels><license>",
+		"btschema": "<license>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3D",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#license"
 	},
@@ -186,7 +186,7 @@
 		"id": "collectionID",
 		"description": "Tag for a collection that the software has been assigned to within bio.tools.",
 	    "type": "Text",
-		"btschema": "<labels><collectionID>",
+		"btschema": "<collectionID>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3E",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#collection"
 	},
@@ -196,7 +196,7 @@
 		"description": "How mature the software product is.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#maturity",
-		"btschema": "<labels><maturity>",
+		"btschema": "<maturity>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link3F",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#maturity"
 	},
@@ -206,7 +206,7 @@
 		"description": "Monetary cost of acquiring the software.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#cost",
-		"btschema": "<labels><cost>",
+		"btschema": "<cost>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link40",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#cost"
 	},
@@ -216,7 +216,7 @@
 		"description": "Whether an online service is freely available for use.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#accessibility",
-		"btschema": "<labels><accessibility>",
+		"btschema": "<accessibility>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link41",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#accessibility"
 	},
@@ -710,7 +710,7 @@
 		"name": "Primary contact",
 		"id": "creditprimaryContact",
 		"description": "The primary point of contact for the software.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Primary</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -719,7 +719,7 @@
 		"name": "Person credit",
 		"id": "creditPerson",
 		"description": "Credit of an individual.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Person</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -773,7 +773,7 @@
 		"name": "Developer credit",
 		"id": "creditDeveloper",
 		"description": "Author of the original software source code.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Developer</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -782,7 +782,7 @@
 		"name": "Maintainer credit",
 		"id": "creditMaintainer",
 		"description": "Maintainer of a mature software providing packaging, patching, distribution etc.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Maintainer</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -791,7 +791,7 @@
 		"name": "Provider credit",
 		"id": "creditProvider",
 		"description": "Institutional provider of an online service.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Provider</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -800,7 +800,7 @@
 		"name": "Documentor credit",
 		"id": "creditDocumentor",
 		"description": "Author of software documentation including making edits to a bio.tools entry.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Documentor</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -809,7 +809,7 @@
 		"name": "Contributor credit",
 		"id": "creditContributor",
 		"description": "Some other role in software production or service delivery including design, deployment, system administration, evaluation, testing, documentation, training, user support etc.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Contributor</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -818,7 +818,7 @@
 		"name": "Support credit",
 		"id": "creditSupport",
 		"description": "Provider of support in using the software.",
-	    "type": "Name, email, URL and/or ORCID iD",
+	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Support</typeRole>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link15",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#credit-group"
@@ -829,7 +829,7 @@
 		"description": "Name of the ELIXIR Node that is credited.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-node",
-		"btschema": "<labels><elixirNode>",
+		"btschema": "<elixirNode>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link43",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-node"
 	},
@@ -839,8 +839,20 @@
 		"description": "Name of the ELIXIR Platform that is credited.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-platform",
-		"btschema": "<labels><elixirPlatform>",
+		"btschema": "<elixirPlatform>",
 		"btschemalink": "http://bio-tools.github.io/btschema/#Link43",
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-platform"
-	}]
+	},
+	{
+		"name": "ELIXIR Community",
+		"id": "elixirCommunity",
+		"description": "Name of relevant ELIXIR (or other) community.",
+	    "type": "enum",
+	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-community",
+		"btschema": "<elixirCommunity>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link43",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#elixir-community"
+	}
+	    
+	]
 }
