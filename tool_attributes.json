@@ -545,6 +545,15 @@
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
 	},
 	{
+		"name": "Quick start guide",
+		"id": "quickStartGuide",
+		"description": "A short guide helping the end-user to use the software as soon as possible.",
+	    "type": "URL",
+		"btschema": "<documentation><type>Quick start guide</type>",
+		"btschemalink": "http://bio-tools.github.io/btschema/#Link1C",
+		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
+	},	    
+	{
 		"name": "Governance",
 		"id": "governance",
 		"description": "Information about the software governance model.",
@@ -846,7 +855,7 @@
 	{
 		"name": "ELIXIR Community",
 		"id": "elixirCommunity",
-		"description": "Name of relevant ELIXIR (or other) community.",
+		"description": "Name of relevant ELIXIR (or associated) community.",
 	    "type": "enum",
 	    "typelink": "http://btschema.readthedocs.io/en/latest/controlled_vocabularies.html#elixir-community",
 		"btschema": "<elixirCommunity>",
