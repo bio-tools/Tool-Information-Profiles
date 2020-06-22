@@ -284,7 +284,7 @@
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#link-group"
 	},
 	{
-		"name": "Social media*",
+		"name": "Social media",
 		"id": "socialMedia",
 		"description": "A website used by the software community including social networking sites, discussion and support fora, WIKIs etc.",
 	    "type": "URL",
