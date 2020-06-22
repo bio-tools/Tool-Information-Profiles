@@ -464,7 +464,7 @@
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#documentation-group"
 	},
 	{
-		"name": "Tool wrapper (CWL",
+		"name": "Tool wrapper (CWL)",
 		"id": "toolWrapperCWL",
 		"description": "Tool wrapper in Common Workflow Language (CWL) format for the software.",
 	    "type": "URL",
@@ -474,7 +474,7 @@
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
 	},
 	{
-		"name": "Tool wrapper (galaxy",
+		"name": "Tool wrapper (galaxy)",
 		"id": "toolWrapperGalaxy",
 		"description": "Galaxy tool configuration file (wrapper) for the software.",
 	    "type": "URL",
@@ -484,7 +484,7 @@
 		"guideline": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
 	},
 	{
-		"name": "Tool wrapper (taverna",
+		"name": "Tool wrapper (taverna)",
 		"id": "toolWrapperTaverna",
 		"description": "Taverna configuration file for the software.",
 	    "type": "URL",
@@ -494,7 +494,7 @@
 		"guideline ": "http://biotools.readthedocs.io/en/latest/curators_guide.html#download-group"
 	},
 	{
-		"name": "Tool wrapper (other",
+		"name": "Tool wrapper (other)",
 		"id": "toolWrapperOther",
 		"description": "Workbench configuration file (other than taverna, galaxy or CWL wrapper) for the software.",
 	    "type": "URL",
