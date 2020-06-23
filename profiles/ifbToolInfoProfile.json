@@ -18,7 +18,7 @@
 				"topic", 
 				"cost", 
 				"publicationPrimary", 
-				"creditprimaryContact"
+				"creditPrimaryContact"
 			],
 			"constraint": "all",
 			"types": [

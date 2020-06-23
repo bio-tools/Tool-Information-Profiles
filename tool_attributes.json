@@ -717,7 +717,7 @@
 	},
 	{
 		"name": "Primary contact",
-		"id": "creditprimaryContact",
+		"id": "creditPrimaryContact",
 		"description": "The primary point of contact for the software.",
 	    "type": "Name, email, URL and/or ORCID iD, GRID ID or FundRef ID",
 		"btschema": "<credit><typeRole>Primary</typeRole>",
